@@ -32,7 +32,7 @@ function App() {
       const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, signer);
 
       // Make sure this is your actual Pinata link!
-      const tokenURI = "ipfs://YOUR_PINATA_JSON_CID"; 
+      const tokenURI = "ipfs://bafkreihj25pbqko6trc6seo6g3hjmxkw37a2tnvtt2rfusmyxpckx4dimm"; 
       
       const transaction = await contract.buyTicket(tokenURI, {
         value: ethers.parseEther("0.01") 
